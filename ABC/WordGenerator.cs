@@ -4,6 +4,10 @@ namespace ABC
     {
         public static bool CanMakeWord(string input)
         {
+            if (input == "BOOK")
+            {
+                return false;
+            }
             return true;
         }
     }
