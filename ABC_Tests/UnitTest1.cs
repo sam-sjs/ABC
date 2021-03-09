@@ -20,5 +20,18 @@ namespace ABC_Tests
 
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        // Do I need a test to check it can create an object before this one? Can't figure out how to assert
+        public void GivenGenerateBlock_WhenInputIsTwoStrings_ThenShouldReturnBlockObject()
+        {
+            string input1 = "A";
+            string input2 = "Q";
+
+            Block testBlock = new Block(input1, input2);
+
+            Assert.Equal(input1, testBlock.Side1);
+            Assert.Equal(input2, testBlock.Side2);
+        }
     }
 }    
